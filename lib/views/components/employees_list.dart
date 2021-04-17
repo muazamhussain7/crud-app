@@ -9,6 +9,7 @@ class EmployeesList extends StatelessWidget {
 
   SingleChildScrollView dataTable(List<Employee> employees) {
     return SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
       child: DataTable(
         columns: [
           DataColumn(
