@@ -16,6 +16,17 @@ class DBHelper with ChangeNotifier {
   static const String TABLE = 'Employee';
   static const String DB_NAME = 'employee1.db';
 
+  var _isUpdating = false;
+
+  void setIsUpdating(bool isUpdating) {
+    _isUpdating = isUpdating;
+    notifyListeners();
+  }
+
+  bool get getIsUpdating {
+    return _isUpdating;
+  }
+
   Future<Database> get db async {
     if (_db != null) {
       return _db;
