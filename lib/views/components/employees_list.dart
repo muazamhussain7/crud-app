@@ -54,7 +54,7 @@ class EmployeesList extends StatelessWidget {
             return Center(child: Text("No Data Found"));
           }
           if (snapshot.hasError) {
-            print(snapshot.error);
+            return Center(child: Text("${snapshot.error}"));
           }
           return CircularProgressIndicator();
         },
