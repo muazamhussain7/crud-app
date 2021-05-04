@@ -14,7 +14,7 @@ class DBHelper with ChangeNotifier {
   static const String ID = 'id';
   static const String NAME = 'name';
   static const String TABLE = 'Employee';
-  static const String DB_NAME = 'employee1.db';
+  static const String DB_NAME = 'employees.db';
 
   var _isUpdating = false;
 
